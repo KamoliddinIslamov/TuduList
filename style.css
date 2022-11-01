@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: conic-gradient(red, yellow, green);
+    padding: 20px;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 700px;
+    margin-left: 50px;
+    font-size: 60px;
+    color: white;
+
+}
+
+.tekst {
+    display: flex;
+    font-weight: 550;
+    letter-spacing: 80px;
+    padding-right: 0px;
+    width: fit-content;
+}
+
+.icons {
+
+    display: flex;
+    justify-content: space-between;
+    width: 525px;
+    padding-right: 75px;
+    margin-top: 3px;
+}
+
+.desc {
+    font-size: 15px;
+    width: 58px;
+    text-align: center;
+    margin-bottom: 7px;
+    animation: waviy 3s infinite;
+}
+
+td {
+    color: white;
+}
+
+.d1 {
+    animation-delay: .2s;
+}
+
+.d2 {
+    animation-delay: .4s;
+}
+
+.d3 {
+    animation-delay: .6s;
+}
+
+.d4 {
+    animation-delay: .8s;
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-10px)
+    }
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo::before {
+    content: "";
+    background-image: conic-gradient(white 20deg,
+            transparent 120deg);
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 5s linear infinite;
+}
+
+/* kamolddin */
+.rasim {
+    position: relative;
+    top: 31px;
+    left: 20px;
+}
+
+#name,
+#email,
+#phon_number {
+    padding-left: 45px;
+}
+
+#nomi {
+    animation-name: animatsiyaNomi;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    margin-top: -170px;
+    position: relative;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animatsiyaNomi {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1.2);
+        margin-top: 40px;
+        text-shadow: 2px 0px 25px black;
+    }
+}
+
+/* Kamoliddin */
+
+.logo::after {
+    content: "";
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    position: absolute;
+}
+
+
+.body {
+    margin-top: 20px;
+    height: 65%;
+}
+
+.trash {
+    border: 5px solid rgb(255, 255, 255);
+    background-color: white;
+    border-radius: 25px;
+    color: #205189;
+    margin-left: 5px;
+    transition: .2s ease-in-out;
+}
+
+.trash:hover {
+    color: white;
+    background-color: #ff2121;
+    border: 5px solid #ff2121;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+
+}
+
+.arrow {
+    transition: 1s ease-in-out;
+}
+
+.arrow:hover {
+    transform: rotate(-360deg);
+    transition: 1s ease-in-out;
+    cursor: pointer;
+    color: green;
+}
+
+.fa-magnifying-glass {
+    position: relative;
+    top: 32px;
+    left: 20px;
+}
+
+#inputSearch {
+    padding-left: 50px;
+}
